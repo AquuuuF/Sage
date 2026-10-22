@@ -5,7 +5,12 @@ The open-source version of our work will be released soon.
 
 
 ## Requirements
-Please follow [LIFT](https://github.com/shijxcs/LIFT).
+* Python 3.12.3
+* PyTorch 2.3.1（CUDA 12.1）
+* Torchvision 0.18.1
+* TensorBoard 2.17.0
+
+- For other dependencies, please refer to [LIFT](https://github.com/shijxcs/LIFT).
 
 
 ## Quick Start 
