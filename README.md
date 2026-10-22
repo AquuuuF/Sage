@@ -10,7 +10,24 @@ Please follow [LIFT](https://github.com/shijxcs/LIFT).
 
 ## Quick Start 
 ```bash
-$ test
+# LIFT+ on CIFAR100-LT, IR=100
+python -u main_Sage.py --data cifar100_ir100 --model clip_vit_b16_cifar100_ir100 output_dir Sage_cifar100_ir100
+
+# LIFT+ on CIFAR100-LT, IR=50
+
+
+# LIFT+ on CIFAR100-LT, IR=10
+
+
+# LIFT+ on Places-LT
+
+
+# LIFT+ on ImageNet-LT
+
+
+# LIFT+ on iNaturalist 2018
+
+
 ```
 
 ## Results and Models for CIFAR-100-LT and Large-scale Datasets 
