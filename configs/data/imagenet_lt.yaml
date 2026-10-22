@@ -1,0 +1,2 @@
+dataset: "ImageNet_LT"
+root: "/home/datasets/imagenet/ILSVRC2012_dataset/"
