@@ -15,22 +15,22 @@ The open-source version of our work will be released soon.
 
 ## Quick Start 
 ```bash
-# LIFT+ on CIFAR100-LT, IR=100
+# Sage on CIFAR100-LT, IR=100
 python -u main_Sage.py --data cifar100_ir100 --model clip_vit_b16_cifar100_ir100 output_dir Sage_cifar100_ir100
 
-# LIFT+ on CIFAR100-LT, IR=50
+# Sage on CIFAR100-LT, IR=50
 
 
-# LIFT+ on CIFAR100-LT, IR=10
+# Sage on CIFAR100-LT, IR=10
 
 
-# LIFT+ on Places-LT
+# Sage on Places-LT
 
 
-# LIFT+ on ImageNet-LT
+# Sage on ImageNet-LT
 
 
-# LIFT+ on iNaturalist 2018
+# Sage on iNaturalist 2018
 
 
 ```
