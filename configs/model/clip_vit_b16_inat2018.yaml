@@ -1,0 +1,39 @@
+backbone: "CLIP-ViT-B/16"
+resolution: 224
+
+output_dir: null
+print_freq: 10
+
+seed: 0
+deterministic: True
+gpu: 0
+num_workers: 8
+prec: "amp"
+
+num_epochs: 20
+batch_size: 128
+micro_batch_size: 128
+lr: 0.01
+weight_decay: 5e-4
+momentum: 0.9
+loss_type: "ours"
+classifier: "CosineClassifier_Sage"
+
+
+### ours loss
+Sage_mu: 0.5
+Sage_gamma: 0.085
+
+### zs_logits
+Sage_lambda_1: 0.0000001
+Sage_lambda_2: 0.0000001
+Sage_lambda_3: 0.0000001
+
+init_head: "ours"
+#prompt: "ensemble"
+tte: True
+expand: 24
+ours_adapt: True
+
+Sage_adapter_alpha: 1.0
+Sage_adapter_use_text_projection: True
