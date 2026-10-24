@@ -1,8 +1,6 @@
 # Sage: Semantic-guided Fine-tuning of Foundation Model for Long-tailed Visual Recognition
 This is the official repo for the paper [Semantic-guided Fine-tuning of Foundation Model for Long-tailed Visual Recognition](https://link.springer.com/article/10.1007/s11263-026-02874-4) (IJCV 2026). 
 
-The open-source version of our work will be released soon.
-
 
 ## Requirements
 * Python 3.12.3
