@@ -50,7 +50,7 @@ python -u main_Sage.py --data inat2018 --model clip_vit_b16_inat2018
 | ImageNet-LT | 78.8%        | [link](https://drive.google.com/file/d/1dKJ_wS5JCr-QfrLgyHmXfD7goqNzCasD/view?usp=sharing)        | [link](https://drive.google.com/file/d/1IrBUsCGB7H63I7einZj7IYoW_Fbis8YB/view?usp=sharing)  |
 | iNat 2018   | 80.9%        | [link]()       | [link]() |
 
-* Note: The release code is based on a cleaned-up version of the original implementation. Module or parameter names in the logs and checkpoints currently listed in the Table may differ from those in the release code. I will rerun the experiments using the release code and update the Table with the new logs and checkpoints soon.
+* Note: The release code is based on a cleaned-up version of the original implementation. Module or parameter names in the logs and checkpoints currently listed in the Table may differ from those in the release code. I will rerun the experiments using the release code and update the Table with the new logs and checkpoints soon. Thanks for your patience ：）
 
 
 ## Acknowledgment
