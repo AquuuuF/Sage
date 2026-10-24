@@ -16,22 +16,27 @@ The open-source version of our work will be released soon.
 ## Quick Start 
 ```bash
 # Sage on CIFAR100-LT, IR=100
-python -u main_Sage.py --data cifar100_ir100 --model clip_vit_b16_cifar100_ir100 output_dir Sage_cifar100_ir100
+python -u main_Sage.py --data cifar100_ir100 --model clip_vit_b16_cifar100_ir100
+
+# Run Sage on CIFAR100-LT with an imbalance ratio of 100 (IR=100), specifying `dataset_dir` as the dataset path and `output_dir` as the directory for saving results.
+python -u main_Sage.py --data cifar100_ir100 --model clip_vit_b16_cifar100_ir100 \
+  root /dataset_dir \
+  output_dir /output_dir
 
 # Sage on CIFAR100-LT, IR=50
-
+python -u main_Sage.py --data cifar100_ir50 --model clip_vit_b16_cifar100_ir50
 
 # Sage on CIFAR100-LT, IR=10
-
+python -u main_Sage.py --data cifar100_ir10 --model clip_vit_b16_cifar100_ir10
 
 # Sage on Places-LT
-
+python -u main_Sage.py --data places_lt --model clip_vit_b16_places_lt
 
 # Sage on ImageNet-LT
-
+python -u main_Sage.py --data imagenet_lt --model clip_vit_b16_imagenet_lt
 
 # Sage on iNaturalist 2018
-
+python -u main_Sage.py --data inat2018 --model clip_vit_b16_inat2018
 
 ```
 
@@ -47,6 +52,7 @@ python -u main_Sage.py --data cifar100_ir100 --model clip_vit_b16_cifar100_ir100
 | ImageNet-LT | 78.8%        | [link](https://drive.google.com/file/d/1dKJ_wS5JCr-QfrLgyHmXfD7goqNzCasD/view?usp=sharing)        | [link](https://drive.google.com/file/d/1IrBUsCGB7H63I7einZj7IYoW_Fbis8YB/view?usp=sharing)  |
 | iNat 2018   | 80.9%        | [link]()       | [link]() |
 
+* Note: The release code is based on a cleaned-up version of the original implementation. Module or parameter names in the logs and checkpoints currently listed in the Table may differ from those in the release code. I will rerun the experiments using the release code and update the Table with the new logs and checkpoints soon.
 
 
 ## Acknowledgment
