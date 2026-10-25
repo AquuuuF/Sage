@@ -37,20 +37,20 @@ python -u main_Sage.py --data imagenet_lt --model clip_vit_b16_imagenet_lt
 python -u main_Sage.py --data inat2018 --model clip_vit_b16_inat2018
 
 ```
+* You can find the core modules of our method in [SG-Adapter](https://github.com/AquuuuF/Sage/blob/9c22082c2820b0b75bd450d1c9791a98b5f1823d/models/peft_modules.py#L82), [Compensation Factor](https://github.com/AquuuuF/Sage/blob/9c22082c2820b0b75bd450d1c9791a98b5f1823d/utils/losses.py#L101), [FIT](https://github.com/AquuuuF/Sage/blob/9c22082c2820b0b75bd450d1c9791a98b5f1823d/trainer_Sage.py#L533). Thanks.
 
 ## Results and Models for CIFAR-100-LT and Large-scale Datasets 
 
+* All the Logs and Checkpoints can be downloaded from [link](https://drive.google.com/drive/folders/1sj8T7px4MhPqBMRrMHmk5pDyJlVFEqr7?usp=sharing)  
 
 | Dataset     | Top-1 Accuracy | Log           | Model |
 | ----------- | -------------- | ------------- | ----- |
-| CIFAR-100-LT, IR=100 | 83.3%        | [link](https://drive.google.com/file/d/1ZkATPZyLbGrHdYYuGaioOoe6csCOP69w/view?usp=sharing)        | [link](https://drive.google.com/file/d/14QKBaMzS8daJ2ZHyuA0_bxc2TRpOOyX4/view?usp=sharing)  |
-| CIFAR-100-LT, IR=50 | 84.6%        | [link](https://drive.google.com/file/d/1P8gmTXwPijSrx3i3JOXZKH-zY1Sx_KtT/view?usp=sharing)       | [link](https://drive.google.com/file/d/1MPF_0e21BB4qnkyMT7GahYuLwZyzJ3hm/view?usp=sharing) |
-| CIFAR-100-LT, IR=10 | 86.3%        | [link](https://drive.google.com/file/d/1Q7ljvM4EysaXl0EBbwA_0Kbnq9OsUPxx/view?usp=sharing)        | [link](https://drive.google.com/file/d/1k7Ok45ZoEqJXzhBYCu0G389XFFeNmzjV/view?usp=sharing)  |
-| Places-LT   | 52.7%        | [link](https://drive.google.com/file/d/1ElS7X81BDOu-4YDx-6vkgvg3yJNyrQFL/view?usp=sharing)        | [link](https://drive.google.com/file/d/1RRCsj6dTRlkjgr5G7J4_Bubtod3nLTz6/view?usp=sharing)  |
-| ImageNet-LT | 78.8%        | [link](https://drive.google.com/file/d/1dKJ_wS5JCr-QfrLgyHmXfD7goqNzCasD/view?usp=sharing)        | [link](https://drive.google.com/file/d/1IrBUsCGB7H63I7einZj7IYoW_Fbis8YB/view?usp=sharing)  |
-| iNat 2018   | 80.9%        | [link]()       | [link]() |
-
-* Note: The release code is based on a cleaned-up version of the original implementation. Module or parameter names in the logs and checkpoints currently listed in the Table may differ from those in the release code. I will rerun the experiments using the release code and update the Table with the new logs and checkpoints soon. Thanks for your patience ：）
+| CIFAR-100-LT, IR=100 | 83.3%        | [link](https://drive.google.com/file/d/1XEJuE1PB5tQw8dYq0OUfzmyk5dz63yMW/view?usp=sharing)        | [link](https://drive.google.com/file/d/1dgHRrcGAXWGmN0v-9_hHbQJaHR4-PKVT/view?usp=sharing)  |
+| CIFAR-100-LT, IR=50 | 84.6%        | [link](https://drive.google.com/file/d/1eoSgM_A2kEV9BhLbqIlzvZrbIzILvBHx/view?usp=sharing)       | [link](https://drive.google.com/file/d/1drafvp0O-5PrRd66XXovDm1ybotIEpkD/view?usp=sharing) |
+| CIFAR-100-LT, IR=10 | 86.3%        | [link](https://drive.google.com/file/d/1HN5YuEcu1uCIuAn5QBeI3JOdmeRYvE1f/view?usp=sharing)        | [link](https://drive.google.com/file/d/1yeLCUbBtnMftzOy0tGtJPA8nnEZCg67_/view?usp=sharing)  |
+| Places-LT   | 52.7%        | [link](https://drive.google.com/file/d/1PI2TPiJp7EJ76kLRySyR7jFyfx34rXYl/view?usp=sharing)        | [link](https://drive.google.com/file/d/1Ei1i9_kBbLsKBPV3ZfXmXEE6XIoUYbAm/view?usp=sharing)  |
+| ImageNet-LT | 78.8%        | [link](https://drive.google.com/file/d/1v3PEAft8Qn7B_Xx57ycZa-AsNOicw-B8/view?usp=sharing)        | [link](https://drive.google.com/file/d/1tF6z05TIHRWOoTtfAgIkqXpP5yi5VsDj/view?usp=sharing)  |
+| iNat 2018   | 80.9%        | [link](https://drive.google.com/file/d/1r5T3i2FMrpMj68Rwc6Ke6pYBQCdbshVr/view?usp=sharing)       | [link](https://drive.google.com/file/d/1VLAdoDkemCj7ErV-723DejHRvMNNwZ2X/view?usp=sharing) |
 
 
 ## Acknowledgment
