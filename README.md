@@ -41,7 +41,7 @@ python -u main_Sage.py --data inat2018 --model clip_vit_b16_inat2018
 
 ## Results and Models for CIFAR-100-LT and Large-scale Datasets 
 
-* All the Logs and Checkpoints can be downloaded from [link](https://drive.google.com/drive/folders/1sj8T7px4MhPqBMRrMHmk5pDyJlVFEqr7?usp=sharing)  
+* All the Logs and Checkpoints can be downloaded from [link](https://drive.google.com/drive/folders/1sj8T7px4MhPqBMRrMHmk5pDyJlVFEqr7?usp=sharing) . 
 
 | Dataset     | Top-1 Accuracy | Log           | Model |
 | ----------- | -------------- | ------------- | ----- |
