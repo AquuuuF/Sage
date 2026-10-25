@@ -37,7 +37,7 @@ python -u main_Sage.py --data imagenet_lt --model clip_vit_b16_imagenet_lt
 python -u main_Sage.py --data inat2018 --model clip_vit_b16_inat2018
 
 ```
-* You can find the core modules of our method in [SG-Adapter](https://github.com/AquuuuF/Sage/blob/9c22082c2820b0b75bd450d1c9791a98b5f1823d/models/peft_modules.py#L82), [Compensation Factor](https://github.com/AquuuuF/Sage/blob/9c22082c2820b0b75bd450d1c9791a98b5f1823d/utils/losses.py#L101), [FIT](https://github.com/AquuuuF/Sage/blob/9c22082c2820b0b75bd450d1c9791a98b5f1823d/trainer_Sage.py#L533). Thanks.
+
 
 ## Results and Models for CIFAR-100-LT and Large-scale Datasets 
 
