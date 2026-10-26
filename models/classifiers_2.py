@@ -60,3 +60,33 @@ class CosineClassifier_Sage(_Classifier):
 
         return output
 
+
+class CosineClassifier(_Classifier):
+    def __init__(self, feat_dim=None, num_classes=None, dtype=None, scale=30, **kwargs):
+        super().__init__(feat_dim, num_classes, dtype)
+        self.scale = scale
+
+    def forward(self, x):
+        x = F.normalize(x, dim=-1)
+        weight = F.normalize(self.weight, dim=-1)
+        return F.linear(x, weight) * self.scale
+
+
+class L2NormedClassifier(_Classifier):
+    def __init__(self, feat_dim=None, num_classes=None, dtype=None, **kwargs):
+        super().__init__(feat_dim, num_classes, dtype)
+    
+    def forward(self, x):
+        weight = F.normalize(self.weight, dim=-1)
+        return F.linear(x, weight)
+
+
+class LayerNormedClassifier(_Classifier):
+    def __init__(self, feat_dim=None, num_classes=None, dtype=None, **kwargs):
+        super().__init__(feat_dim, num_classes, dtype)
+        self.ln = nn.LayerNorm(feat_dim, elementwise_affine=False, eps=1e-12, dtype=dtype)
+
+    def forward(self, x):
+        x = self.ln(x)
+        weight = F.normalize(self.weight, dim=-1)
+        return F.linear(x, weight)
